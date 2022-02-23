@@ -16,8 +16,8 @@
 ### （2）Spider发送要处理的域名：`http://example.com`
 ### （3）Scrapy Engine会再次询问Spider要处理的第一个URL
 ### （4）Spider发送`http://xxxxxx.com`给Scrapy Engine
-（5）Scrapy Engine会让Scheduler将requests请求排序入队
-（6）Scheduler处理requests
+### （5）Scrapy Engine会让Scheduler将requests请求排序入队
+### （6）Scheduler处理requests
 （7）Scrapy Engine向Scheduler要处理好的requests请求
 （8）Scheduler发送处理好的requests给Scrapy Engine
 （9）Scrapy Engine要求Downloader按照Downloader Middlewares的设置下载requests请求
