@@ -8,9 +8,9 @@
 ### （2）Scheduler(调度器)：它负责接受Scrapy Engine发送过来的Request请求，并按照一定的方式进行整理排列，入队，当Scrapy Engine需要时，交还给Scrapy Engine。
 ### （3）Downloader(下载器)：负责下载Scrapy Engine发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine，由Scrapy Engine交给Spider处理。
 ### （4）Spider(爬虫)：它负责处理所有Responses，从中分析提取数据，获取item字段需要的数据，并将需要跟进的URL提交给Scrapy Engine，再次进入Scheduler。
-    （5）Item Pipeline(管道)：它负责处理Spider中获取到的Item,并进行后期处理(详细分析、过滤、存储等)。
-    （6）Downloader Middlewares(下载中间件)：可以当做是一个可以自定义扩展下载功能的组件。
-    （7）Spider Middlewares(Spider中间件)： 可以理解是一个可以自定扩展和操作Scrapider Engine和Spider中间通信的功能组件（比如进入Spider的Responses，和从Spider出去的Requests）
+### （5）Item Pipeline(管道)：它负责处理Spider中获取到的Item,并进行后期处理(详细分析、过滤、存储等)。
+### （6）Downloader Middlewares(下载中间件)：可以当做是一个可以自定义扩展下载功能的组件。
+### （7）Spider Middlewares(Spider中间件)： 可以理解是一个可以自定扩展和操作Scrapider Engine和Spider中间通信的功能组件（比如进入Spider的Responses，和从Spider出去的Requests）
 3、Scrapy的运作流程
 　　（1）Scrapy Engine询问Spider要处理的网站，即爬取的域名范围，如http://example.com，这同时也防止爬虫越界
 　　（2）Spider发送要处理的域名：`http://example.com`
