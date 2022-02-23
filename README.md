@@ -14,8 +14,8 @@
 ## 3、Scrapy的运作流程
 ### （1）Scrapy Engine询问Spider要处理的网站，即爬取的域名范围，如http://example.com，这同时也防止爬虫越界
 ### （2）Spider发送要处理的域名：`http://example.com`
-（3）Scrapy Engine会再次询问Spider要处理的第一个URL
-（4）Spider发送`http://xxxxxx.com`给Scrapy Engine
+### （3）Scrapy Engine会再次询问Spider要处理的第一个URL
+### （4）Spider发送`http://xxxxxx.com`给Scrapy Engine
 （5）Scrapy Engine会让Scheduler将requests请求排序入队
 （6）Scheduler处理requests
 （7）Scrapy Engine向Scheduler要处理好的requests请求
