@@ -18,9 +18,9 @@
 ### （4）Spider发送`http://xxxxxx.com`给Scrapy Engine
 ### （5）Scrapy Engine会让Scheduler将requests请求排序入队
 ### （6）Scheduler处理requests
-（7）Scrapy Engine向Scheduler要处理好的requests请求
-（8）Scheduler发送处理好的requests给Scrapy Engine
-（9）Scrapy Engine要求Downloader按照Downloader Middlewares的设置下载requests请求
+### （7）Scrapy Engine向Scheduler要处理好的requests请求
+### （8）Scheduler发送处理好的requests给Scrapy Engine
+### （9）Scrapy Engine要求Downloader按照Downloader Middlewares的设置下载requests请求
 （10）Downloader Middlewares将下载好的requests发送给Scrapy Engine。如果request下载失败，Scrapy Engine会告诉Scheduler，这个request下载失败了，需要记录一下，等会儿再下载。
 （11）Scrapy Engine返回给Spider下载好的requests，是一个responses对象，responses默认是交给Spider的def parse()这个函数处理的。
 （12）当Spider处理完responses后，如果有需要跟进的URL，会告诉Scrapy Engine，同时将处理好的Item数据提交给Scrapy Engine。
