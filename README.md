@@ -26,7 +26,7 @@
 ### （12）当Spider处理完responses后，如果有需要跟进的URL，会告诉Scrapy Engine，同时将处理好的Item数据提交给Scrapy Engine。
 ### （13）Scrapy Engine会将接收到的Item发送给Item Pipeline处理。同时将需要跟进的URL发送给Scheduler，让其循环处理，直到获取完需要的全部信息。
 ### （14）Item Pipeline处理获取到的Item。
-注意：只有当Scheduler中不存在任何request了，整个程序才会停止（如果requests中有下载失败的URL，Scrapy也会重新下载）。
+#### 注意：只有当Scheduler中不存在任何request了，整个程序才会停止（如果requests中有下载失败的URL，Scrapy也会重新下载）。
 ## `Text1`
 ### scrapy 创建
     scrapy startproject Text1
