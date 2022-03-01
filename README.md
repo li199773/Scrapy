@@ -31,3 +31,4 @@
 ### `scrapy`创建
     scrapy startproject Text1
 ### `scrapy`启动
+    scrapy crawl Tex1
