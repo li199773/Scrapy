@@ -11,7 +11,7 @@
 ### （5）Item Pipeline(管道)：它负责处理Spider中获取到的Item,并进行后期处理(详细分析、过滤、存储等)。
 ### （6）Downloader Middlewares(下载中间件)：可以当做是一个可以自定义扩展下载功能的组件。
 ### （7）Spider Middlewares(Spider中间件)： 可以理解是一个可以自定扩展和操作Scrapider Engine和Spider中间通信的功能组件（比如进入Spider的Responses，和从Spider出去的Requests）
-## 3、Scrapy的运作流程
+## `3、Scrapy的运作流程`
 ### （1）Scrapy Engine询问Spider要处理的网站，即爬取的域名范围，如 http://example.com， 这同时也防止爬虫越界
 ### （2）Spider发送要处理的域名：`http://example.com`
 ### （3）Scrapy Engine会再次询问Spider要处理的第一个URL
