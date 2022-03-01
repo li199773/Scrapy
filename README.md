@@ -1,9 +1,9 @@
 # `Scrapy`
-## 1.`简介`
+## `1.简介`
 ### （1）Scrapy是用纯python实现的，一个为了爬取网站数据、提取结构性数据而编写的应用框架。
 ### （2）框架的力量，用户只需要定制开发几个模块就可以轻松的实现一个爬虫，用来抓取网页内容以及各种图片。
 ### （3）Scrapy使用了Twisted(其主要对手是Tornado)异步网络框架来处理网络通讯，可以加快我们的下载速度，不用自己取实现异步框架，并且包含了各种中间件接口，可以灵活的完成各种需求。
-## 2.名称介绍
+## `2.名称介绍`
 ### （1）Scrapy Engine(引擎)：负责Spider、ItemPipeline、DownLoader、Scheduler中间的通讯、信号、数据传递等。
 ### （2）Scheduler(调度器)：它负责接受Scrapy Engine发送过来的Request请求，并按照一定的方式进行整理排列，入队，当Scrapy Engine需要时，交还给Scrapy Engine。
 ### （3）Downloader(下载器)：负责下载Scrapy Engine发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine，由Scrapy Engine交给Spider处理。
