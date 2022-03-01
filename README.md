@@ -36,3 +36,4 @@
     name = 'demo'  # 爬虫名字
     allowed_domains = ['demo.cn']  # 允许爬虫的范围
     start_urls = ['https://demo.com']  # 最开始的url地址
+###
