@@ -41,7 +41,7 @@
     allowed_domains = ['demo.cn']  # 允许爬虫的范围
     start_urls = ['https://demo.com']  # 最开始的url地址
 ### `settings.py`
-    LOG_LEVEL = 'WARNING' # 消除警告，只保留主体部分
+    LOG_LEVEL = 'WARNING' # 消除警告，只保留输出主体部分
     
     # Configure item pipelines
     # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
