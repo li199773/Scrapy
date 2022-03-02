@@ -42,10 +42,11 @@
     start_urls = ['https://demo.com']  # 最开始的url地址
 ### `settings.py`
     LOG_LEVEL = 'WARNING' # 消除警告，只保留主体部分
+    
     # Configure item pipelines
     # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
     ITEM_PIPELINES = {
     'Text1.pipelines.Text1Pipeline': 300,
-    } #
+    } #PIPELINES管道，实现item传输，300表示时间权重
 **** 
 
