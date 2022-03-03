@@ -63,5 +63,6 @@
             return item
     # 可同时定义多个class
     class Text1Pipeline1:
+### `Text1/spider/xxx.py`
 **** 
 
