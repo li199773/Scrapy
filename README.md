@@ -31,7 +31,7 @@
 ### （14）Item Pipeline处理获取到的Item。
 #### 注意：只有当Scheduler中不存在任何request了，整个程序才会停止（如果requests中有下载失败的URL，Scrapy也会重新下载）。
 ****
-## `Text1`
+# `Text1`
 ### `scrapy`创建
     scrapy startproject Text1
 ### `scrapy`启动
