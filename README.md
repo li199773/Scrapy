@@ -49,6 +49,10 @@
     'Text1.pipelines.Text1Pipeline': 300,
     } #PIPELINES管道，实现item传输，300表示时间权重
 ### 'items.py'
+    # 将字典key先进行标注，防止使用错误
     name = scrapy.Field()
+    name = scrapy.Field()
+    name = scrapy.Field()
+    name = scrapy.Field() 
 **** 
 
