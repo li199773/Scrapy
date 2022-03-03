@@ -53,6 +53,11 @@
     name = scrapy.Field()
     name = scrapy.Field()
     name = scrapy.Field()
-    name = scrapy.Field() 
+    name = scrapy.Field()
+### `pipelines.py`
+class Text1Pipeline:
+    def process_item(self, item, spider):
+        item["style"] = "width"
+        return item
 **** 
 
