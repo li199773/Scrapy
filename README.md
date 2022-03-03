@@ -48,5 +48,7 @@
     ITEM_PIPELINES = {
     'Text1.pipelines.Text1Pipeline': 300,
     } #PIPELINES管道，实现item传输，300表示时间权重
+### 'items.py'
+    name = scrapy.Field()
 **** 
 
