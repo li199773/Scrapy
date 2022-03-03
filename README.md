@@ -60,5 +60,7 @@
         def process_item(self, item, spider):
             item["style"] = "width"
             return item
+    # 可同时定义多个class
+    class Text1Pipeline1:
 **** 
 
