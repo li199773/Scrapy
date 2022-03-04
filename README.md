@@ -64,5 +64,8 @@
     # 可同时定义多个class
     class Text1Pipeline1:
 ### `Text1/spider/xxx.py`
+    item = {}
+    # 使用xpath进行提取数据即可,得到的数据类型并不是一个列表类型
+    yield item
 **** 
 
