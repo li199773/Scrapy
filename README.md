@@ -68,7 +68,8 @@
     # 使用xpath进行提取数据即可,得到的数据类型并不是一个列表类型
     yield item
     #yield返回传输给pipelines
-### `Text2/spiders/logging模块`
+****
+# `Text2/spiders/logging模块`
     # 方式一
     # logging.warning(item)
     # 2022-02-15 15:38:52 [root] WARNING: {'name': 'logging模块'}
