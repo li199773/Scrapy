@@ -68,5 +68,6 @@
     # 使用xpath进行提取数据即可,得到的数据类型并不是一个列表类型
     yield item
     #yield返回传输给pipelines
+### `Text2/spiders/logging模块`
 **** 
 
