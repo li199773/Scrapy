@@ -79,5 +79,7 @@
     # 方式三:传入pipeline
     yield item
 # `Text3/spider/tencent`
+## `tencent.py`
+    def start_requests(self):
 **** 
 
