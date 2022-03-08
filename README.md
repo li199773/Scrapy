@@ -80,6 +80,7 @@
     yield item
 # `Text3/spider/tencent`
 ## `tencent.py`
+    # start_requests这个函数首先进行运行
     def start_requests(self):
 **** 
 
