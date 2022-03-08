@@ -93,7 +93,7 @@
 ## `pipelines.py`
     # 创建MySQL数据库进行存储
     keys = ', '.join(item.keys())
-    values = ', '.join(['%s'] * len(item))
+    values = ', '.join(['%s'] * len(item)) # 生成等量的 %S
     sql = 'INSERT INTO {table}({keys}) VALUES ({values})'.format(table="tencent", keys=keys, values=values)
 **** 
 
