@@ -82,5 +82,12 @@
 ## `tencent.py`
     # start_requests这个函数首先进行运行
     def start_requests(self):
+    # 使用字典推导式：cookies必须形成字典的形式
+        cookies_dict = {cookie.split("=")[0]: cookie.split("=")[1] for cookie in cookies.split("; ")}
+        yield scrapy.Request(
+            url=self.start_urls[0],
+            callback=self.parse,
+            cookies=cookies_dict
+        )
 **** 
 
