@@ -97,5 +97,10 @@
     sql = 'INSERT INTO {table}({keys}) VALUES ({values})'.format(table="tencent", keys=keys, values=values)
 ****
 # `Text4/spider/movie`
+    # 重点是找到下一页的url
+        next_url = response.xpath("//a[@class='next']/@href").extract_first()
+        # 判断输出是否为None
+        if next_url != None:
+            yield scrapy.Request(next_url, callback=self.parse)
 **** 
 
