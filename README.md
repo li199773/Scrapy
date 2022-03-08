@@ -95,6 +95,7 @@
     keys = ', '.join(item.keys())
     values = ', '.join(['%s'] * len(item)) # 生成等量的 %S
     sql = 'INSERT INTO {table}({keys}) VALUES ({values})'.format(table="tencent", keys=keys, values=values)
+****
 # `Text4/spider/movie`
 **** 
 
