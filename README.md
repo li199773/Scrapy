@@ -90,5 +90,10 @@
             callback=self.parse,
             cookies=cookies_dict
         )
+## `pipelines.py`
+    # 创建MySQL数据库进行存储
+    keys = ', '.join(item.keys())
+    values = ', '.join(['%s'] * len(item))
+    sql = 'INSERT INTO {table}({keys}) VALUES ({values})'.format(table="tencent", keys=keys, values=values)
 **** 
 
