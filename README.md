@@ -115,5 +115,7 @@
                     meta={"item": item}
                 )
 ## `pipelines.py`
+    # 将数据库的连接放到open_spider中,这样只会进行一次连接操作
+    def open_spider(self, spider):
 **** 
 
