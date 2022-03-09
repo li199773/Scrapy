@@ -117,5 +117,14 @@
 ## `pipelines.py`
     # 将数据库的连接放到open_spider中,这样只会进行一次连接操作
     def open_spider(self, spider):
+         self.conn = pymysql.connect(
+                host="localhost",
+                port=3306,
+                user="root",
+                password="123456",
+                database='scrapy_database',
+            )
+            self.cur = self.conn.cursor()
+            self.cur.execute(sql)
 **** 
 
