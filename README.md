@@ -104,6 +104,7 @@
         if next_url != None:
             yield scrapy.Request(next_url, callback=self.parse)
 ## `pipelines.py`
-
+    import pymysql
+    # 同理存入数据库
 **** 
 
