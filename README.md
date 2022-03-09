@@ -99,10 +99,10 @@
 # `Text4/spider/movie`
 ## `movie.py`
     # 重点是找到下一页的url
-        next_url = response.xpath("//a[@class='next']/@href").extract_first()
-        # 判断输出是否为None
-        if next_url != None:
-            yield scrapy.Request(next_url, callback=self.parse)
+    next_url = response.xpath("//a[@class='next']/@href").extract_first()
+    # 判断输出是否为None
+    if next_url != None:
+        yield scrapy.Request(next_url, callback=self.parse)
 ## `pipelines.py`
     import pymysql
     # 同理存入数据库
