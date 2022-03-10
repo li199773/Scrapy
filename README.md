@@ -133,7 +133,8 @@
         # LinkExtractor 链接提取器 提取url地址
         # callback 提取出来的url地址response会交给callback进行处理 可有可无
         # follow 当前url相应是能够重新进rule进行提取url地址
-        Rule(LinkExtractor(allow=r'//www.xuexila.com/duanzi/jingdianduanzi/\d+\.html'), callback='parse_item'),  # .使用\进行转义
+        Rule(LinkExtractor(allow=r'//www.xuexila.com/duanzi/jingdianduanzi/\d+\.html'), callback='parse_item'),  # .使用\进行转义,然后传给parse_item
         Rule(LinkExtractor(allow=r'/duanzi/jingdianduanzi/list_\d+\.html'), follow=True),  # 下一页不需要对页面进行处理
     )
+   
 ****
