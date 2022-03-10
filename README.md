@@ -127,5 +127,5 @@
             self.cur = self.conn.cursor()
             self.cur.execute(sql)
 **** 
-# `Text6/spider/duanzi`
+# `CrawlSpider Text6/spider/duanzi`
 ****
