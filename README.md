@@ -127,7 +127,8 @@
             self.cur = self.conn.cursor()
             self.cur.execute(sql)
 **** 
-# `CrawlSpider Text6/spider/duanzi`
+# `Text6/spider/duanzi`
+# `CrawlSpider`
 ## `duanzi.py`
     rules = (
         # LinkExtractor 链接提取器 提取url地址
