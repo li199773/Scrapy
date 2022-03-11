@@ -137,5 +137,4 @@
         Rule(LinkExtractor(allow=r'//www.xuexila.com/duanzi/jingdianduanzi/\d+\.html'), callback='parse_item'),  # .使用\进行转义,然后传给parse_item
         Rule(LinkExtractor(allow=r'/duanzi/jingdianduanzi/list_\d+\.html'), follow=True),  # 下一页不需要对页面进行处理
     )
-   
 ****
