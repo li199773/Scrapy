@@ -138,3 +138,4 @@
         Rule(LinkExtractor(allow=r'/duanzi/jingdianduanzi/list_\d+\.html'), follow=True),  # 下一页不需要对页面进行处理
     )
 ****
+# `Text7/spiders/tieba`
