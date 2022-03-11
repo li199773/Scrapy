@@ -139,8 +139,8 @@
     )
 ****
 # `Text7/spiders/tieba`
-## `tieba.py`
-# `start_requests`方法的重写
+# `tieba.py`
+## `start_requests`方法的重写
     def start_requests(self):
         cookies = ''
         # 使用字典推导式
