@@ -146,4 +146,5 @@
         # 使用字典推导式
         cookies_dict = {cookie.split("=")[0]: cookie.split("=")[1] for cookie in cookies.split("; ")}
         # 将请求头传入parse函数中，每次url在请求时会带着请求头进行处理
+## 主体包含两部分:列表页的翻页和详细页的翻页
 ****
